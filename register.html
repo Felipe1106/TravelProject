@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <title>This is a Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> 
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="logo.png"></a>
+            <div class="nav-links" id=navLinks>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul> 
+            
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>   
+        </nav>
+    
+    <div class="alert-box">
+         <p class="alert"></p>
+    </div>    
+
+
+    <div class="comment-box">
+
+        <form class="comment-form">
+
+
+        
+        <h3> Sign Up</h3>
+        
+        
+        
+            <input type="text" placeholder="name" class="name" required>
+            <input type="email" placeholder="email" autocomplete="off" class="email" required>
+            <input type="password" placeholder="password" autocomplete="off" class="password" required>
+            <div class="button-container"></div>
+            <button class="hero-btn red-btn">Submit</button>
+        </div>
+        
+        
+        
+        
+    </div>
+
+</form>
+        
+        
+
+        
+        
+        
+    </section>
+    
+    <section>
+    <div class="transparent-square"></div>
+        
+    
+    </section>
+
+    
+    
+    
+    
+    
+<!------javascript for menu --------->   
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        
+        function showMenu(){
+            navLinks.style.right = "0";         
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    
+    </script>
+    
+    <script src="js/form.js"></script>
+    
+    
+    
+
+</body>
+</html>
