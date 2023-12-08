@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <title>This is a Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> 
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="logo.png"></a>
+            <div class="nav-links" id=navLinks>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Sign up</a></li>
+                </ul> 
+            
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>   
+        </nav>
+    <div class="alert-box">
+        <p class="alert">msg</p>
+    </div>
+    <div class="comment-box">
+        
+        <h3>Login</h3>
+        
+        
+        <form class="comment-form">
+            <input type="email" placeholder="email">
+            <input type="text" placeholder="password">
+            <div class="button-container"></div>
+            <button type="submit" class="hero-btn red-btn">Login</button>
+            <a href="register.html" class="link">dont have an account? Register now!</a>
+        </div>
+        
+        </form>
+        
+    </div>
+        
+        
+
+        
+        
+        
+    </section>
+    
+    <section>
+    <div class="transparent-square"></div>
+        
+    
+    </section>
+
+    
+    
+    
+    
+    
+<!------javascript for menu --------->   
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        
+        function showMenu(){
+            navLinks.style.right = "0";         
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    
+    </script>
+    
+    
+    
+
+</body>
+</html>
